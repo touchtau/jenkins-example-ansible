@@ -2,4 +2,4 @@
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
 [mariadbs]
-mariadb ansible_ssh_host=167.71.61.188 ansible_ssh_port=22 ansible_user=root
+mariadb ansible_host=167.71.61.188 ansible_port=22 ansible_user=root
