@@ -5,6 +5,7 @@ pipeline {
     stage('Hello') {
       steps {
         sh '''
+          whoami
           ansible --version
           ansible-playbook --version
           ansible-galaxy --version
