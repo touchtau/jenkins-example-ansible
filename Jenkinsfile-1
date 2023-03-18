@@ -5,7 +5,7 @@ pipeline {
     stage('Hello') {
       steps {
         sh '''
-          sudo ansible centos -m ping
+          ansible centos -m ping
           ansible --version
           ansible-playbook --version
           ansible-galaxy --version
