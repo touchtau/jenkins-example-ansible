@@ -2,11 +2,6 @@
   hosts: mariadbs
   become: yes
   tasks:
-    - name: enable and start firewalld service
-      systemd:
-        name: firewalld
-        state: started
-        enabled: yes
     - name: permit traffic in default zone on port 22/tcp
       ansible.posix.firewalld:
         port: 22/tcp
